@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabalho Ferramentas de Desenvolvimento</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">Welligton Brito</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- Menu -->
+    <nav>
+      <ul class="menu" id="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação Educacional</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="sobre" class="sobre">
+      <h1>Sobre Mim:</h1>
+      <p>
+        Meu nome é Welligton Gabriel Brito, estou cursando Análise e Desenvolvimento de Sistemas na faculdade UNINTER de Ibitinga - SP.<br>
+        Já tenho um pouco de conhecimento na área. Já concluí um curso técnico de Análise e Desenvolvimento de Sistemas na ETEC de Ibitinga e estou curtindo bastante esse curso da UNINTER. Creio que irá agregar muito na minha carreira profissional.
+      </p>
+    </section>
+
+    <section id="formacao" class="formacao">
+      <h1>Formação Educacional:</h1>
+      <ul>
+        <li>Ensino Médio Completo</li>
+        <li>Curso: Técnico de Análise e Desenvolvimento de Sistemas - ETEC Ibitinga</li>
+        <li>Curso: Networking Essentials - Cisco Networking</li>
+        <li>Curso/Emblema: Introdução à Cibersegurança - Cisco Networking</li>
+        <li>Curso: Power BI e Excel Avançado - SENAI Ibitinga</li>
+        <li>Curso: Língua Inglesa - CEL (Centro de Estudo de Línguas) Ibitinga</li>
+      </ul>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+      <h1>Portfólio:</h1>
+      <p>Trabalho atualmente na Area do curso escolhido e esse é um projeto em que faço parte
+        <button class="btn"><a class="link" href="https://expedy.com.br">Projeto</a></button>
+      </p>
+    </section>
+
+    <!-- Formulario Contato -->
+    <section id="contato" class="contato">
+      <h1>Entre em contato:</h1>
+      <form class="form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" />
+    
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+    
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
